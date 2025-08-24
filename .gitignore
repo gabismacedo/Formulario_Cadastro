@@ -1,0 +1,11 @@
+.venv/
+.env
+env/
+venv/
+forms_cadastro\app_forms_cadastro\__pycache__
+forms_cadastro\forms_cadastro\settings.py
+*.pyc
+arquivos/
+*.sqlite3
+.vscode/
+.idea/

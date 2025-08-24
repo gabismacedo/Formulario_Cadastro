@@ -1,0 +1,87 @@
+{% load static%}
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+  <!--CSS -->
+  <link href="static\css\index.css" rel="stylesheet">
+
+  <title>Cadastre-se</title>
+</head>
+
+<body>
+  <h1>Cadastre-se</h1>
+  <form id="formulario" enctype="multipart/form-data" method="post" action="http://127.0.0.1:8000/">
+    {% csrf_token %}
+    <div class="nome_form">
+      <label>Nome</label>
+      <input type="text" id="nome-form" name="nome">
+    </div>
+
+    <div class="endereco_form">
+      <label>Endereço:</label>
+      <input type="texte" id="endereco-form" name="endereco">
+    </div>
+
+    <div class="idade_form">
+      <label>Idade:</label>
+      <input type="number" id="idade-form" name="idade">
+    </div>
+
+    <div class="dtnascimento_form">
+      <label>Idade:</label>
+      <input type="date" id="dtnascimento-form" name="dt_nascimento">
+    </div>
+
+    <div class="raca_form">
+      <legend>Raça:</legend>
+
+      <input type="radio" name="raca" value="preto">
+      <label>Preto</label>
+
+      <input type="radio" name="raca" value="amarelo">
+      <label> Amarelo</label>
+
+      <input type="radio" name="raca" value="branco">
+      <label> Branco</label>
+
+      <input type="radio" name="raca" value="pardo">
+      <label> Pardo</label>
+    </div>
+
+    <div class="formacao_form">
+      <legend>Formação:</legend>
+
+      <input type="checkbox" name="formacao" value="medio_incompleto">
+      <label>Ensino Médio Incompleto</label>
+
+      <input type="checkbox" name="formacao" value="medio_completo">
+      <label> Ensino Médio Completo</label>
+
+      <input type="checkbox" name="formacao" value="superior_incompleto">
+      <label> Superior Incompleto</label>
+
+      <input type="checkbox" name="formacao" value="superior_completo">
+      <label> Superior Completo</label>
+
+      <input type="checkbox" name="formacao" value="curso_tecnico">
+      <label> Curso Técnico</label>
+
+      <input type="checkbox" name="formacao" value="pos_graduacao">
+      <label> Pós Gradução</label>
+      <div class="arquivo_form">
+        <label>Seleciona um arquivo:</label>
+        <input type="file" id="arquivo-form" name="arquivo">
+      </div>
+    </div>
+    <div>
+      <button type="submit" class="btn_enviar">Enviar</button>
+    </div>
+  </form>
+</body>
+
+</html>
