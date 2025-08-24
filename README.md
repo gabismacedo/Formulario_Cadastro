@@ -1,7 +1,7 @@
 # 📝 Formulário cadastro de usuarios 
 
-Este projeto também possui um   
-This project also includes a 
+Este README esá em inglês e português<br>
+This README is in english and portuguese 
 
 ## Descrição
 
@@ -33,3 +33,36 @@ Ideal para aplicações que necessitam de um sistema de registro, podendo ser us
 python forms_cadastro\manage.py runserver
 ```
 
+<br>
+
+# 📝 User Registration Form
+
+## Description
+
+**Formulario_Cadastro** is a user registration form project developed with Django, aimed at collecting and storing user information.  
+It is ideal for applications that require a registration system and can be used as a base for larger projects involving user registration, authentication, or user management.  
+The collected data is stored in a database; in this scenario, SQL Server is used for data storage.
+
+## ✨ How it works
+
+- Allows users to fill out a registration form with their information.
+- The collected data is saved in a SQL Server database.
+
+## 🛠️ Main Technologies and Libraries
+
+- **Python**
+- **Django**
+- **HTML**
+- **CSS**
+- **SQL Server**
+
+## 📁 File Structure
+
+- `forms_cadastro`: Django project folder.
+- `app_forms`: Django app for the project.
+
+## ▶️ Example of execution
+
+```bash
+python forms_cadastro\manage.py runserver
+```
